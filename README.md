@@ -14,50 +14,12 @@ Refer to the above and use Terminal to<br>
 sudo xattr -r -d com.apple.quarantine /Applications/Adobe\ Indesign\ 2025/Plug-ins/KohakuExtendScript.InDesignPlugin<br>
 Please execute.
 
-note<br>
-How to use ScriptList class<br>
-https://community.adobe.com/t5/indesign-discussions/how-to-use-scriptlist-class-in-indesign-cs5-sdk/m-p/3210409
-
 ## extendScript for JavaScript
 ```
 // Auto match scroll zoom all layout. 
 app.autoMatchScrollZoomAllLayout = true; // Set
 flg = app.autoMatchScrollZoomAllLayout; // get
 
-// Match scroll zoom all layout.
-app.matchScrollZoomAllLayout();
-
-// Query Nth layout. 
-app.activeDocument.queryNthLayout(0);
-
-// Auto match scroll zoom all layout.
-app.activeDocument.queryNthLayout(0).autoMatchScrollZoomAllLayout = true; // Set
-
-// Access content location at frame origin.
-app.activeDocument.queryNthLayout(0).accessContentLocationAtFrameOriginX = 0; // Set
-y = app.activeDocument.queryNthLayout(0).accessContentLocationAtFrameOriginY;  // Get
-
-// Is split layout view shown.
-result = app.activeDocument.queryNthLayout(0).isSplitLayoutViewShown();
-
-// Split / Unsplit layout.
-app.activeDocument.queryNthLayout(0).toggleSplitLayout();
-
-// Keyboard shortcut for style.
-app.activeDocument.characterStyles.lastItem().keyboardShortcut = ""; // delete
-app.activeDocument.characterStyles.lastItem().keyboardShortcut = "Shift+Ctrl+Alt+Num 0"
-shortcut = app.activeDocument.characterStyles.lastItem().keyboardShortcut;
-
-// Remove context shortcut.
-// Contextstring:
-// 		DialogContext
-// 		DefaultContext
-// 		TableContext
-// 		TableObjectContext
-// 		KBSCContext_XMLStructureContext
-// 		FullScreenContext
-// 		TextContext
-app.removeContextShortcut("DefaultContext", 'Shift+Ctrl+Alt+F12'); // Style shortcuts will not disappear.
 ```
 
 ## Build Method
