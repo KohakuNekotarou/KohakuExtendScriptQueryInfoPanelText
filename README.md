@@ -6,8 +6,6 @@
 We cannot be held responsible for any issues arising from your use of this service.<br>
 Please use it at your own risk.<br>
 
-Retrieve the text displayed on the information panel.<br>
-
 On Mac, you cannot use downloaded plug-ins directly.<br>
 https://helpx.adobe.com/jp/indesign/kb/indesign-and-macos-catalina.html<br>
 Refer to the above and use Terminal to<br>
@@ -16,10 +14,30 @@ Please execute.
 
 ## extendScript for JavaScript
 ```
-// Auto match scroll zoom all layout. 
-app.autoMatchScrollZoomAllLayout = true; // Set
-flg = app.autoMatchScrollZoomAllLayout; // get
+// Retrieve the text displayed on the information panel.
 
+// TypeToolPanelCursorXLocationLabel
+value = app.queryInfoPanelText("0x17D00", 83);
+alert(value);
+
+// TypeToolPanelCursorYLocationLabel
+value = app.queryInfoPanelText("0x17D00", 85);
+alert(value);
+
+// Save the list to the desktop.
+var text = "";
+for(i = 1; i <= 255; i++){
+	value = app.queryInfoPanelText("0x15C00", i);
+	text += "0x15C00 " + i + " : " + value + "\n";
+}
+for(i = 1; i <= 255; i++){
+	value = app.queryInfoPanelText("0x17D00", i);
+	text += "0x17D00 " + i + " : " + value + "\n";
+}
+var f0 = File("~/desktop/InfoPanelText.txt");
+f0.open("w");
+f0.write(text);
+f0.close();
 ```
 
 ## Build Method
