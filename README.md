@@ -76,7 +76,7 @@ Set the build configuration to Release.<br>
 Product > Build
 
 **6. Load PlugIn**<br>
-SDK/build/mac/release_cocoa64/KohakuExtendScript.InDesignPlugin<br>
+SDK/build/mac/release_cocoa64/KohakuExtendScriptQueryInfoPanelText.InDesignPlugin<br>
 Place the PlugIn in the PlugIn folder in InDesign.<br>
 If the message “As the correct plugin” appears.<br>
 Product > Clean Build Folder...<br>
