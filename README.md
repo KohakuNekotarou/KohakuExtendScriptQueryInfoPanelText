@@ -57,7 +57,7 @@ SDK/devtools/dolly/dolly.jar<br>
 use<br>
 <img width="486" height="593" alt="dolly1" src="https://github.com/user-attachments/assets/187632dc-9ff0-43c4-98aa-c4caa93ef2cc" /><br>
 <img width="486" height="593" alt="dolly2" src="https://github.com/user-attachments/assets/8f08d7d5-dd47-45ce-91b1-2951034368da" /><br>
-<img width="486" height="593" alt="dolly3" src="https://github.com/user-attachments/assets/bd11920d-1356-4f8c-8d3b-c7ccb1cc5af8" /><br>
+<img width="486" height="593" alt="dolly3" src="https://github.com/user-attachments/assets/da50a70c-1a63-410c-a99e-ae38f836e0ab" /><br>
 <img width="486" height="593" alt="dolly4" src="https://github.com/user-attachments/assets/8f6fc0c4-a3f9-460b-b04f-50d078144980" /><br>
 The project directory is located at<br>
 SDK/build/mac/prj<br>
@@ -66,17 +66,11 @@ Set up and create as follows.
 **4. Download the source from Git**<br>
 ![Git](https://github.com/user-attachments/assets/5157f513-096f-4e2e-b471-af644948e97c)<br>
 Place the source files in the<br>
-SDK/source/sdksamples/KohakuExtendScript<br>
+SDK/source/sdksamples/kohakuExtendScriptQueryInfoPanelText
 folder.
 
 **5. Build in Xcode**<br>
 Load KohakuExtendScript project in Xcode.<br>
-Add source to the plugin.<br>
-KESScriptProvider.cpp file is already present in Source.<br>
-KES.fr file is already present in Resources.<br>
-KESID.h file is already present in Plugin, so I don't think it needs to be added to the project.<br>
-KESScriptingDefs.h is also not displayed, but it should be included in the project, so I don't think it needs to be added.<br>
-![add](https://github.com/user-attachments/assets/b59fa0ad-5317-4d33-a50c-fb83f53aa459)&nbsp;  
 Set the build configuration to Release.<br>
 ![add](https://github.com/user-attachments/assets/f8f82811-aa80-45e3-a15b-3938aa53e278)<br>
 Product > Build
