@@ -32,7 +32,7 @@
 #define kKESQIPTCompanyValue	kSDKDefPlugInCompanyValue	// Company name displayed externally.
 
 // Plug-in:
-#define kKESQIPTPluginName	"KohakuExtendScriptQueryPanelText"			// Name of this plug-in.
+#define kKESQIPTPluginName	"KohakuExtendScriptInfoQueryPanelText"			// Name of this plug-in.
 #define kKESQIPTPrefixNumber	0xe204450 		// Unique prefix number for this plug-in(*Must* be obtained from Adobe Developer Support).
 #define kKESQIPTVersion		kSDKDefPluginVersionString						// Version of this plug-in (for the About Box).
 #define kKESQIPTAuthor		""					// Author of this plug-in (for the About Box).
@@ -64,7 +64,7 @@ DECLARE_PMID(kActionIDSpace, kKESQIPTAboutActionID, kKESQIPTPrefix + 0)
 //DECLARE_PMID(kWidgetIDSpace, kKESQIPTWidgetID, kKESQIPTPrefix + 2)
 
 //Script Element IDs
-DECLARE_PMID(kScriptInfoIDSpace, kKESQIPTQueryPanelTextMethodScriptElement, kKESQIPTPrefix + 0)
+DECLARE_PMID(kScriptInfoIDSpace, kKESQIPTQueryInfoPanelTextMethodScriptElement, kKESQIPTPrefix + 0)
 
 // "About Plug-ins" sub-menu:
 #define kKESQIPTAboutMenuKey			kKESQIPTStringPrefix "kKESQIPTAboutMenuKey"

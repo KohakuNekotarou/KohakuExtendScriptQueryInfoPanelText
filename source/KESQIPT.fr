@@ -96,7 +96,6 @@ resource ClassDescriptionTable(kSDKDefClassDescriptionTableResourceID)
 		kBaseScriptProviderBoss,
 		{
 			IID_ISCRIPTPROVIDER,kKESQIPTScriptProviderImpl,
-			
 		}
 	},
 	
@@ -180,12 +179,12 @@ resource VersionedScriptElementInfo(0)
 		// Query panel text
 		Method
 		{
-			kKESQIPTQueryPanelTextMethodScriptElement, // ScriptElementID
+			kKESQIPTQueryInfoPanelTextMethodScriptElement, // ScriptElementID
 			e_KESQIPTQueryInfoPanelText, // ScriptID
-			"query panel text", // Name. If you want the name in the script to be "kohakuNekotarou", enter "kohaku nekotarou".
-			"Query panel text", // Description
+			"query info panel text", // Name. If you want the name in the script to be "kohakuNekotarou", enter "kohaku nekotarou".
+			"Query info panel text", // Description
 			StringType, // Return value.
-			"Panel text", // Description
+			"text value", // Description
 			{ // list of method parameters.
 				// First argument
 				p_KESQIPTPrefix,
@@ -210,7 +209,7 @@ resource VersionedScriptElementInfo(0)
 			{
 				// ---------------------------------------------------------------------------------------
 				Object{ kApplicationObjectScriptElement }, // target
-				Method{ kKESQIPTQueryPanelTextMethodScriptElement }, // Additional
+				Method{ kKESQIPTQueryInfoPanelTextMethodScriptElement }, // Additional
 			}
 		}
 	}
