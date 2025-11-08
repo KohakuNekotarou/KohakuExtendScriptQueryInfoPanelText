@@ -70,7 +70,7 @@ SDK/source/sdksamples/kohakuExtendScriptQueryInfoPanelText
 folder.
 
 **5. Build in Xcode**<br>
-Load KohakuExtendScript project in Xcode.<br>
+Load SDK/build/mac/prj/KohakuExtendScriptQueryInfoPanelText.xcodeproj in Xcode.<br>
 Set the build configuration to Release.<br>
 <img width="279" height="58" alt="rere" src="https://github.com/user-attachments/assets/420c409a-f7f0-495f-95bf-f61c1497d380" /><br>
 Product > Build
